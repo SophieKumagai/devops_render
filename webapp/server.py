@@ -1,5 +1,5 @@
 import os
-from pythonenv import load_dotenv
+#from pythonenv import load_dotenv
 import psycopg2
 from flask import Flask, render_template
 
@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 def get_db_connection():
     # carregar env
-    load_dotenv()
+    #load_dotenv()
     
     conn = psycopg2.connect(host=os.getenv("DB_HOST"),
                             database=os.getenv("DB_NAME"),
