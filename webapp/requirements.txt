@@ -3,3 +3,4 @@ flask>=1.1.2
 psycopg2
 gunicorn
 pythonenv
+load_dotenv
